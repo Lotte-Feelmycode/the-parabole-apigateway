@@ -6,7 +6,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://3.39.25.221:8761/eureka
+      defaultZone: http://localhost:8761/eureka
 
 spring:
   application:
@@ -19,4 +19,4 @@ spring:
       - id: the-parabole-event
         uri: lb://THE-PARABOLE-EVENT
         predicates:
-          - Path=/api/v2/event/**
+          - Path=/api/v1/event/**
