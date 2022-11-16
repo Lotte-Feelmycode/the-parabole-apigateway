@@ -19,11 +19,11 @@ public class FilterConfig {
             .route(r -> r.path("/api/v1/event/**")
                 .filters(f -> f.addRequestHeader("event-request", "event-request-header")
                     .addResponseHeader("event-response", "event-header"))
-                .uri("http://localhost:8081"))
+                .uri("http://3.39.22.105:8081"))
             .route(r -> r.path("/api/v1/**")
                 .filters(f -> f.addRequestHeader("market-request", "market-request-header")
                     .addResponseHeader("market-response", "market-header"))
-                .uri("http://localhost:8080"))
+                .uri("http://13.125.163.134:8080"))
             .build();
     }
 }
